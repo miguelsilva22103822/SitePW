@@ -19,8 +19,12 @@ ol.center {
     list-style-position: inside;
 }
 
-table {
-    margin-left: auto;
+table, th, td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
     margin-right: auto;
-    text-align: center;
+    margin-left: auto;
+    text-align: left;
+    border-color: blueviolet;
 }
