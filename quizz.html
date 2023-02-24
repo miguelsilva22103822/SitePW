@@ -55,36 +55,37 @@
 
                             <label for="Nome">Nome:</label>
                             <br>
-                            <input type="text" name="" id="fname" autofocus="true" autocomplete="additional-name" size="30" required="true">
+                            <input type="text" name="" id="fname" autofocus="true" autocomplete="additional-name" size="28" required="true">
                             <br>
                             <label for="Apelido">Apelido:</label>
                             <br>
-                            <input type="text" name="" id="lname" autocomplete="family-name" size="30" required="true">
+                            <input type="text" name="" id="lname" autocomplete="family-name" size="28" required="true">
                             <br>
                             <label for="Email">E-mail:</label>
                             <br>
-                            <input type="email" name="" id="email" autocomplete="email" size="30" required="true">
+                            <input type="email" name="" id="email" autocomplete="email" size="28" required="true">
 
                         </fieldset>
 
 
                         <fieldset class="small" title="perguntas">
+
                             <ol>
 
                                 <li>
                                     <p>Qual é o famoso museu em Londres que abriga a Rosetta Stone?</p>
-                                    <input type="radio" id="1a" name="museu" value="British Museum">
+                                    <input type="radio" id="1a" name="">
                                     <label for="1a">British Museum</label><br>
-                                    <input type="radio" id="1b" name="museu" value="National Gallery">
+                                    <input type="radio" id="1b" name="">
                                     <label for="1b">National Gallery</label><br>
-                                    <input type="radio" id="1c" name="museu" value="Tate Modern">
+                                    <input type="radio" id="1c" name="">
                                     <label for="1c">Tate Modern</label>
                                 </li>
                             
 
                                 <li>
                                     <p>Em que ano foi inaugurada a London Eye?</p>
-                                    <input type="number" name="" id="1b" min="1995" max="2006" step="1">
+                                    <input type="number" name="" id="1b" min="1995" max="2006" step="1" value = "2000">
                                 </li>
                                 
                                 <li>
@@ -116,7 +117,7 @@
 
                                 <li>
                                     <p>Qual é o nome do Rio que atravessa a Cidade?</p>
-                                    <input type="text" placeholder="Nome do Rio" id="4a">
+                                    <input type="text" placeholder="Nome do Rio" id="4a" maxlength="10">
                                 </li>
                                 
                                 <li>
@@ -131,15 +132,14 @@
                                 
                                 <li>
                                     <p>Mostre através deste slider a sua vontade de visitar a cidade depois de consultar este site 😀</p>
+                                    <input type="range" id="7a">
                                 </li>
-
-                                <br>
-                                <input type="range" size="50" value="">
                                 
                             </ol>
+
                         </fieldset>
                         
-                        <input type="image" src="images/submitbutton.png" alt="Submit">
+                        <input type="image" src="images/submitbutton.png" alt="Submit" width="112" height="44">
 
                     </fieldset>
                 </form>
