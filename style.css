@@ -91,3 +91,9 @@ table
     margin-left: auto;
     margin-right: auto;
 }
+
+legend
+{
+    font-size: large;
+    font-weight: bold;
+}
