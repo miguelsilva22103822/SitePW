@@ -27,6 +27,17 @@
 
         </header>
 
+        <nav>
+            <p>
+                <a href="index.html">Introdução</a>
+                <a href="local.html">Localização</a>
+                <a href="multimedia.html">Multimedia</a>
+                <a href="info.html">Informação</a>
+                <b><a href="quizz.html">Quizz</a></b>
+                <a href="html5-css.html">HTML5 e CSS</a>
+            </p>
+        </nav>
+
         <main>
 
             <section>
@@ -37,45 +48,105 @@
 
             <section>
 
-                <form action="">
-                    <fieldset>
+                <form method="POST" action="mailto: miguelrmsilva@gmail.com" enctype="multipart/form-data">
+                    <fieldset class="big">
 
-                        <fieldset title="info">
+                        <fieldset class="small" title="info">
 
                             <label for="Nome">Nome:</label>
-                            <input type="text" name="" id="fname">
+                            <br>
+                            <input type="text" name="" id="fname" autofocus="true" autocomplete="additional-name" size="30" required="true">
                             <br>
                             <label for="Apelido">Apelido:</label>
-                            <input type="text" name="" id="lname">
+                            <br>
+                            <input type="text" name="" id="lname" autocomplete="family-name" size="30" required="true">
                             <br>
                             <label for="Email">E-mail:</label>
-                            <input type="text" name="" id="email">
+                            <br>
+                            <input type="email" name="" id="email" autocomplete="email" size="30" required="true">
 
                         </fieldset>
 
-                        <fieldset title="perguntas">
 
+                        <fieldset class="small" title="perguntas">
+                            <ol>
+
+                                <li>
+                                    <p>Qual é o famoso museu em Londres que abriga a Rosetta Stone?</p>
+                                    <input type="radio" id="1a" name="museu" value="British Museum">
+                                    <label for="1a">British Museum</label><br>
+                                    <input type="radio" id="1b" name="museu" value="National Gallery">
+                                    <label for="1b">National Gallery</label><br>
+                                    <input type="radio" id="1c" name="museu" value="Tate Modern">
+                                    <label for="1c">Tate Modern</label>
+                                </li>
                             
 
+                                <li>
+                                    <p>Em que ano foi inaugurada a London Eye?</p>
+                                    <input type="number" name="" id="1b" min="1995" max="2006" step="1">
+                                </li>
+                                
+                                <li>
+                                    <p>Quais destes monumentos pertencem a Londres? (selecione todas as opções corretas)</p>
+                                    <input type="checkbox" id="3a">
+                                    <label for="3a">London Eye</label>
+                                    <br>
+                                    <input type="checkbox" id="3b">
+                                    <label for="3b">Parthenon in Athens</label>
+                                    <br>
+                                    <input type="checkbox" id="3c">
+                                    <label for="3c">The Shard</label>
+                                    <br>
+                                    <input type="checkbox" id="3d">
+                                    <label for="3d">Eiffel Tower</label>
+                                    <br>
+                                    <input type="checkbox" id="3e">
+                                    <label for="3e">Tower Bridge</label>
+                                    <br>
+                                    <input type="checkbox" id="3f">
+                                    <label for="3f">The Gherkin</label>
+                                    <br>
+                                    <input type="checkbox" id="3g">
+                                    <label for="3g">Buckingham Palace</label>
+                                    <br>
+                                    <input type="checkbox" id="3h">
+                                    <label for="3h">Leaning Tower of Pisa</label>
+                                </li>
+
+                                <li>
+                                    <p>Qual é o nome do Rio que atravessa a Cidade?</p>
+                                    <input type="text" placeholder="Nome do Rio" id="4a">
+                                </li>
+                                
+                                <li>
+                                    <p>Em que data foi a cerimónia de abertura dos jogos olimpicos em 2012?</p>
+                                    <input type="date" id="5a">
+                                </li>
+
+                                <li>
+                                    <p>Escolha a cor que mais associa com a cidade</p>
+                                    <input type="color" id="6a">
+                                </li>
+                                
+                                <li>
+                                    <p>Mostre através deste slider a sua vontade de visitar a cidade depois de consultar este site 😀</p>
+                                </li>
+
+                                <br>
+                                <input type="range" size="50" value="">
+                                
+                            </ol>
                         </fieldset>
+                        
+                        <input type="image" src="images/submitbutton.png" alt="Submit">
 
                     </fieldset>
                 </form>
 
             </section>
             
-
         </main>
-
-        <nav>
-            <p>
-                <b><a href="index.html">Introdução</a></b>
-                <a href="local.html">Localização</a>
-                <a href="multimedia.html">Multimedia</a>
-                <a href="info.html">Informação</a>
-                <a href="quizz.html">Quizz</a>
-            </p>
-        </nav>
 
         <footer>
             <h3>Miguel Silva - 22103822 - ULHT - 2023</h3>

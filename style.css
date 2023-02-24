@@ -1,14 +1,18 @@
 body
 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(0, 0, 100);
-    background-color: rgb(185, 200, 250);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(220, 240, 250);
     text-align: center;
+}
+
+h1, h2, h3
+{
+    color: rgb(0, 0, 100);
 }
 
 footer
 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(0, 0, 100);
 }
 
@@ -28,6 +32,35 @@ ol.center
     list-style-position: inside;
 }
 
+fieldset.big
+{
+    margin-left: 27%;
+    margin-right: 27%;
+    position: center;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+
+    border-color: blueviolet;
+}
+
+fieldset.small
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+
+    position: center;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    border-color: blueviolet;
+    text-align: justify;
+}
+
 table, th, td
 {
     border: 1px solid black;
@@ -36,4 +69,10 @@ table, th, td
     margin-left: auto;
     text-align: left;
     border-color: blueviolet;
+    padding-left: center;
+    padding-right: center;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: fit-content;
 }
