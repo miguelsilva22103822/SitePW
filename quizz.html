@@ -49,27 +49,27 @@
             <section>
 
                 <form method="POST" action="mailto: miguelrmsilva@gmail.com" enctype="multipart/form-data">
-                    <fieldset class="big">
-                        <legend>Quiz</legend>
+                    <fieldset class="outer">
+                        <legend id="nomeform">Quiz</legend>
 
-                        <fieldset class="small" title="info">
+                        <fieldset class="inner" title="info">
 
                             <label for="Nome">Nome:</label>
                             <br>
-                            <input type="text" name="" id="fname" autofocus="true" autocomplete="additional-name" size="28" required="true">
+                            <input type="text" name="" id="fname" autofocus="true" autocomplete="additional-name" size="28" required="true" maxlength="20">
                             <br>
                             <label for="Apelido">Apelido:</label>
                             <br>
-                            <input type="text" name="" id="lname" autocomplete="family-name" size="28" required="true">
+                            <input type="text" name="" id="lname" autocomplete="family-name" size="28" required="true" maxlength="20">
                             <br>
                             <label for="Email">E-mail:</label>
                             <br>
-                            <input type="email" name="" id="email" autocomplete="email" size="28" required="true">
+                            <input type="email" name="" id="email" autocomplete="email" size="28" required="true" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="email@domain.com">
 
                         </fieldset>
 
 
-                        <fieldset class="small" title="perguntas">
+                        <fieldset class="inner" title="perguntas">
 
                             <ol>
 
@@ -90,7 +90,7 @@
                                 </li>
                                 
                                 <li>
-                                    <p>Quais destes monumentos pertencem a Londres? (selecione todas as opções corretas)</p>
+                                    <p>Quais destes monumentos pertencem a Londres? (Selecione todas as opções corretas).</p>
                                     <input type="checkbox" id="3a">
                                     <label for="3a">London Eye</label>
                                     <br>
@@ -117,25 +117,40 @@
                                 </li>
 
                                 <li>
+                                    <p>Dos monumentos que estão na página multimedia qual é o seu favorito? (Escolha da lista).</p>
+                                    <input list="listmonuments" id="4a" autocomplete="off">
+                                    <datalist id="listmonuments">
+                                        <option value="Big Ben"></option>
+                                        <option value="London Eye"></option>
+                                        <option value="St. Paul's Cathedral"></option>
+                                    </datalist>
+                                </li>
+
+                                <li>
                                     <p>Qual é o nome do Rio que atravessa a Cidade?</p>
-                                    <input type="text" placeholder="Nome do Rio" id="4a" maxlength="10">
+                                    <select id="5a" multiple>
+                                        <option value="Seine">Seine</option>
+                                        <option value="Thames">Thames</option>
+                                        <option value="Danube">Danube</option>
+                                        <option value="Rhine">Rhine</option>
+                                    </select>
                                 </li>
                                 
                                 <li>
                                     <p>Em que data foi a cerimónia de abertura dos jogos olimpicos em 2012?</p>
-                                    <input type="date" id="5a">
+                                    <input type="date" id="6a">
                                 </li>
 
                                 <li>
-                                    <p>Escolha a cor que mais associa com a cidade</p>
-                                    <input type="color" id="6a">
+                                    <p>Escolha a cor que mais associa com a cidade.</p>
+                                    <input type="color" id="7a">
                                 </li>
                                 
                                 <li>
-                                    <p>Mostre através deste slider a sua vontade de visitar a cidade depois de consultar este site 😀</p>
-                                    <input type="range" id="7a">
+                                    <p>Mostre através deste slider a sua vontade de visitar a cidade depois de consultar este site.😀</p>
+                                    <input type="range" id="8a">
                                 </li>
-                                
+
                             </ol>
 
                         </fieldset>
