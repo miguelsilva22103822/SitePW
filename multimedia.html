@@ -31,12 +31,12 @@
 
         <nav>
             <p>
-                <a href="index.html">Introdução</a> ||
-                <a href="local.html">Localização</a> ||
-                <b><a href="multimedia.html">Multimedia</a></b> ||
-                <a href="info.html">Informação</a> ||
-                <a href="quizz.html">Quiz</a> ||
-                <a href="html5-css.html">HTML5 e CSS</a>
+                <a href="index.html" class="button">😀Introdução</a>
+                <a href="local.html" class="button">📌Localização</a>
+                <b><a href="multimedia.html" class="button">🎬Multimedia</a></b>
+                <a href="info.html" class="button">📝Informação</a>
+                <a href="quizz.html" class="button">🏆Quiz</a>
+                <a href="html5-css.html" class="button">📑HTML5&CSS</a>
             </p>
         </nav>
 
@@ -46,24 +46,37 @@
 
                 <h2>Multimedia</h2>
 
-                <p>Video e fotografias da cidade</p>
+                <p>Um video, fotografias e um poema sobre a cidade</p>
+
+                <nav class="medianav">
+                    <p>
+                        <a href="#video" class="button">🎬Video</a>
+                        <a href="#fotografias" class="button">📷Fotografias</a>
+                        <a href="#poema" class="button">📜Poema</a>
+                    </p>
+                </nav>
 
             </section>
 
+
             <section>
 
-                <h3>Video</h3>
+                <h3 id="video">Video</h3>
+
+                <p class="wrapmargin">Algumas das melhores vistas aéreas</p>
 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/2aLqVb22LGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             
             </section>
+
+            <br>
         
             <section>
 
-                <h3>Fotografias</h3>
+                <h3 id="fotografias">Fotografias</h3>
                 
                 <p class="wrapmargin">
-                    
+                    Vários monumentos únicos
                 </p>
 
                 <p>
@@ -79,6 +92,24 @@
                     <iframe src="images/bigben_grande.png" frameborder="0" name="foto" width="600" height="400"></iframe>
 
                 </figure>
+
+            </section>
+
+
+            <section>
+
+                <h3 id="poema">Poema</h3>
+
+                <p>Um pequeno poema</p>
+
+                <div class="poema">
+                    <p>My wishes now come homeward,</p>
+                    <p>Their gallopings in vain,</p>
+                    <p>Logic and lust are quiet,</p>
+                    <p>And again it starts to rain;</p>
+                    <p>Falling asleep I listen</p>
+                    <p>To the falling London rain.</p>
+                </div>
 
             </section>
             
