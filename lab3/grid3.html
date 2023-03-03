@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Viajar</title>
+
+        <style>
+
+            @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Serif&display=swap');
+
+            *
+            {
+                font-family: 'Comfortaa', cursive;
+
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            main
+            {
+                background-image: url(https://source.unsplash.com/JH_R66BihvA);
+                background-size: cover;
+            }
+            h1
+            {
+                font-size: 40px;
+            }
+            header
+            {
+                position: sticky;
+                display:flex;
+                top: 0;
+                background-color: orange;
+                color: black;
+                z-index: 5;
+
+                justify-content: space-between;
+            }
+            nav a
+            {
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 15px;
+                padding-bottom: 1px;
+                font-weight: 100;
+
+
+                text-decoration: none;
+                color: black;
+            }
+            nav a:hover
+            {
+                background-color: #fcb67d;
+                font-weight: bold;
+            }
+            .item1
+            {   
+                grid-area: header;
+                background-color: lightblue;
+            }
+            .item2
+            { 
+                grid-area: menu; 
+                background-color: lightcyan;
+            }
+            .item3
+            {
+                grid-area: main;
+                /*background-color: azure;*/
+                background-image: url(https://source.unsplash.com/sGRMspZmfPE);
+                background-size: cover;
+            }
+            .item4
+            {
+                grid-area: right;
+                background-color: lightyellow;
+                background-image: url(https://source.unsplash.com/q9syX8-szoo);
+                background-size: cover;
+            }
+            .item5
+            {
+                grid-area: footer;
+                background-color: blanchedalmond;
+            }
+            .grid-container
+            {
+                display: grid;
+
+                height: 926px;
+                grid-template-columns: 0.5fr 3fr 0.5fr;
+                grid-template-rows: 8% 1fr 5vh;
+
+                grid-template-areas: 
+                'header main right'
+                'menu main right'
+                'footer footer footer';
+
+                grid-gap: 20px;
+                padding: 20px;
+            }
+
+            .grid-container > div
+            {
+                outline-style: solid;
+                outline-width: 1px;
+                outline-color: gray;
+                padding: 10px;
+                font-weight: bold;
+            }
+
+            .boxtitle
+            {
+                display: flex;
+                justify-content: center;
+            }
+
+            .menu
+            {
+                display: flex;
+                flex-flow: wrap;
+                justify-content: center;
+            }
+
+            .menu > a
+            {
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                white-space: nowrap;
+
+                box-sizing: border-box;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <header>
+            <h1>Layouts baseados em flex e grid</h1>
+            <nav>
+                <h1><a href="index.html">Flex💪</a><a href="grid3.html">Grid🔲</a></h1>
+            </nav>
+        </header>
+
+
+        <main>
+
+            <div class="grid-container">
+                <div class="item1">Header</div>
+
+                <div class="item2">
+                    <div class="boxtitle">
+                        Menu
+                    </div>
+
+                    <br>
+
+                    <nav class="menu">
+                        <a href="grid1.html">Grid 1</a>
+                        <a href="grid2.html">Grid 2</a>
+                        <a href="grid3.html">Grid 3</a>
+                        <a href="grid4.html">Grid 4</a>
+                        <a href="grid5.html">Grid 5</a>
+                        <a href="grid6.html">Grid 6</a>
+                    </nav>
+
+                </div>
+
+                <div class="item3">Praia</div>
+                <div class="item4">Ondas</div>
+                <div class="item5">Footer</div>
+            </div>
+
+        </main>
+
+
+    </body>
+
+</html>

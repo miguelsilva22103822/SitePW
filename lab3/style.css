@@ -9,6 +9,12 @@
     margin: 0;
 }
 
+main
+{
+    background-image: url(https://source.unsplash.com/JH_R66BihvA);
+    background-size: cover;
+}
+
 h1
 {
     font-size: 40px;
@@ -72,6 +78,81 @@ h1
     align-items: center;
 }
 
+.divmaluco
+{
+    display: flex;
+    height: 28vh;
+    background-color: #fcb67d;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.divmaluco:hover
+{
+    display: none;
+}
+
+.circulo1
+{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+
+    background-color: darkcyan;
+    
+    display: flex;
+    position: relative;
+    
+    
+    top: 0vh;
+    left: 2vw;
+}
+
+.circulo2
+{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+
+    background-color: lightcoral;
+    
+    display: flex;
+    position: relative;
+    
+    top: 3vh;
+    left: -9vw;
+}
+
+.circulo3
+{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+
+    background-color: lightskyblue;
+    
+    display: flex;
+    position: relative;
+    
+    top: 5vh;
+    left: 6vw;
+}
+
+.quadrado
+{
+    width: 6vh;
+    height: 6vh;
+
+    background-color: deeppink;
+
+    display: flex;
+    position: relative;
+
+    top: 10vh;
+    left: -2.2vw;
+}
+
 .sobre
 {
     position: absolute;
@@ -86,4 +167,97 @@ h1
 img
 {
     width: 100%;
+}
+
+.imagemmaluca
+{
+    position: absolute;
+    clip: rect(0px,60px,200px,0px);
+    z-index: 3;
+}
+
+header
+{
+    position: sticky;
+    display:flex;
+    top: 0;
+    background-color: orange;
+    color: black;
+    z-index: 5;
+
+    justify-content: space-between;
+}
+
+nav a
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 1px;
+    font-weight: 100;
+
+
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover
+{
+    background-color: #fcb67d;
+    font-weight: bold;
+}
+
+.item1
+{   
+    grid-area: header;
+    background-color: lightblue;
+}
+.item2
+{ 
+    grid-area: menu; 
+    background-color: lightcyan;
+}
+.item3
+{
+    grid-area: main;
+    /*background-color: azure;*/
+    background-image: url(https://source.unsplash.com/sGRMspZmfPE);
+    background-size: cover;
+}
+.item4
+{
+    grid-area: right;
+    background-color: lightyellow;
+    background-image: url(https://source.unsplash.com/q9syX8-szoo);
+    background-size: cover;
+}
+.item5
+{
+    grid-area: footer;
+    background-color: blanchedalmond;
+}
+
+.grid-container
+{
+    display: grid;
+
+    height: 926px;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    grid-template-rows: 8% 1fr 5vh;
+
+    grid-template-areas: 
+    'header header header'
+    'menu main right'
+    'footer footer footer';
+
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-container div
+{
+    outline-style: solid;
+    outline-width: 1px;
+    padding: 10px;
+    font-weight: bold;
 }
