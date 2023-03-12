@@ -148,12 +148,7 @@ img
     width: 100%;
 }
 
-.imagemmaluca
-{
-    position: absolute;
-    clip: rect(0px,60px,200px,0px);
-    z-index: 3;
-}
+
 
 header
 {
@@ -239,4 +234,19 @@ nav a:hover
     outline-width: 1px;
     padding: 10px;
     font-weight: bold;
+}
+
+.divimagem
+{
+    display: flex;
+
+    justify-content:space-around;
+    align-content: center;
+}
+
+.imagemmaluca
+{
+    position: absolute;
+    clip: rect(0px,1280px,500px,640px);
+    z-index: 3;
 }
