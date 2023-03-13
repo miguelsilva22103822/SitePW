@@ -1,0 +1,77 @@
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: url(Galaxy\ Space\ BG_0001-01.jpg);
+    background-size: 2500px;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    width: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    width: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+
+    bottom: 0px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    margin: 100px;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+}
+
+.button {
+    background-color: rgb(225, 0, 255);
+    padding: 10px;
+    margin: 15px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: rgb(119, 0, 255);
+}
+
