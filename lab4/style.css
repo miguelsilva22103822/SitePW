@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cidades {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    padding: 50px;
+}
+
+.cidades > div {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px gray;
+    
+    margin: 10px;
+}
+
+.cidades img {
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+}
+
+.cidades > div div:last-child{
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.links {
+    display: flex;
+}
+
+.menu a:last-child {
+    margin-left: auto;
+}
+
+a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
