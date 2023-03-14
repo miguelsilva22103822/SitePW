@@ -7,7 +7,7 @@
 }
 
 body {
-    background: url(Galaxy\ Space\ BG_0001-01.jpg);
+    background: url(images/galaxySpace.jpg);
     background-size: 2500px;
     background-repeat: no-repeat;
     background-color: black;
@@ -79,13 +79,6 @@ footer {
     transition: font-size 0.3s, background-color 0.3s;
 
     text-decoration: none;
-
-<<<<<<< HEAD
-    white-space: nowrap;
-    word-wrap: normal;
-=======
-    
->>>>>>> 0b4688ca9839f919a23fd9ab0eec10d3c328b603
 }
 
 .button:hover {
