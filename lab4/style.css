@@ -1,60 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 * {
     box-sizing: border-box;
-    padding: 0px;
     margin: 0px;
-
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    text-justify: distribute;
 }
 
-.cidades {
+.centeritems {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: space-around;
-    padding: 50px;
-}
-
-.cidades > div {
-    display: flex;
-    justify-content: space-around;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px gray;
-    
-    margin: 10px;
-}
-
-.cidades img {
-    border-radius: 10px 0 0 10px;
-    height: 100%;
-}
-
-.cidades > div div:last-child{
-    width: 150px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 0 10px 10px 0;
-
-    display: flex;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
 }
 
-.menu {
+.wrapgood {
     display: flex;
-
-    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin: 0px 0px;
 }
 
-.links {
-    display: flex;
-}
-
-.menu a:last-child {
-    margin-left: auto;
-}
-
-a {
-    padding: 20px;
+nav a {
+    white-space: nowrap;
     text-decoration: none;
+    background-color: rgb(220, 235, 255);
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 20px;
+    padding: 8px;
+    margin: 4px 10px;
+}
+
+nav a:hover {
+    background-color: blueviolet;
     color: white;
+}
+
+h1, h2, h3, h4, p, table {
+    margin: 20px 20px;
+}
+
+table {
+    background-color: rgba(20, 20, 20, 0.5);
+    margin: 20px 20px;
+}
+
+tr {
+    background-color: rgb(215, 235, 255);
+}
+
+th {
+    padding: 2px 5px;
+}
+
+td {
+    background-color: aliceblue;
+    text-align: center;
+    padding: 2px 5px;
 }
