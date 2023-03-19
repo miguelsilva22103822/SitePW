@@ -629,3 +629,67 @@ iframe {
     background: url(images/rain.gif);
 
 }
+
+.animimage1 {
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%; 
+
+      
+    animation-name: round-border, roda;
+    animation-duration: 3s;
+    
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.crazyanimationbg1 {
+    border-radius: 5%;
+
+    animation-name: color-crazy, round-border;
+    animation-duration: 0.25s;
+    
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+
+    margin: 100px;
+}
+
+@keyframes round-border {
+    0% {
+        border-radius: 5%;
+    }
+    50% {
+        border-radius: 50%;
+    }
+    100% {
+        border-radius: 5%;
+    }
+}
+
+@keyframes color-crazy {
+    0% {
+        background-color: rgb(255, 180, 255);
+    }
+    50% {
+        background-color: rgb(220, 235, 255);
+    }
+    100% {
+        background-color: rgb(255, 180, 255);
+    }
+}
+
+@keyframes roda {
+    0% {transform: rotate(180deg);}
+    25% {transform: rotate(180deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(0deg);}
+    100% {transform: rotate(180deg);}
+}
+
+@keyframes roda-encolhe {
+    0% {transform: rotate(0deg); width: 200px;}
+    50% {transform: rotate(180deg);  width: 100px;}
+    100% {transform: rotate(360deg);  width: 200px;}
+}
