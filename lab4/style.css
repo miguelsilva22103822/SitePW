@@ -1,4 +1,4 @@
--@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,11 +8,81 @@
     text-justify: distribute;
 }
 
+body {
+    background: rgba(230, 255, 255, 1.0);
+    background: -webkit-linear-gradient(bottom, rgba(230, 255, 255, 1.0), rgba(250, 255, 255, 1.0));
+    background: -moz-linear-gradient(bottom, rgba(230, 255, 255, 1.0), rgba(250, 255, 255, 1.0));
+    background: linear-gradient(to top, rgba(230, 255, 255, 1.0), rgba(250, 255, 255, 1.0));
+    background-attachment: fixed;
+}
+
+.herotitle {
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    border-radius: 10px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.herobg {
+    background: none;
+    background-color: rgba(230, 255, 255, 1.0);
+}
+
+.pink {
+    color: rgb(255, 180, 255);
+}
+
+.lefttab {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(230, 255, 255, 0.5);
+    min-width: 55px;
+    height: 100%;
+    z-index: -1;
+
+    font-size: 0px;
+    transition: font-size 0.3s, background-color 0.3s;
+
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.lefttab:hover {
+    font-size: 25px;
+    background-color: rgba(230, 255, 255, 0.9);
+}
+
+.normal {
+    font-size: 35px;
+}
+
+.video {
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
 .centeritems {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+}
+
+.blueting {
+    background-color: rgba(230, 255, 255, 1.0);
+    width: 100%;
+    z-index: -2;
 }
 
 .wrapgood {
@@ -27,9 +97,20 @@ nav a {
     text-decoration: none;
     background-color: rgb(220, 235, 255);
     border: 1px solid rgb(128, 128, 128);
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 8px;
     margin: 4px 10px;
+    color: black;
+
+    box-shadow: 1px 1px 3px 1px rgba(20, 20, 20, 0.1);
+
+    transition: color 0.05s, background-color 0.2s;
+}
+
+.currentpage
+{
+    background-color: rgb(255, 180, 255);
+    color: white;
 }
 
 nav a:hover {
@@ -39,6 +120,15 @@ nav a:hover {
 
 h1, h2, h3, h4, p, table {
     margin: 20px 20px;
+}
+
+.firstpink::first-letter {
+    color: rgb(255, 180, 255);
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 table {
@@ -58,4 +148,158 @@ td {
     background-color: aliceblue;
     text-align: center;
     padding: 2px 5px;
+}
+
+fieldset {
+    border: none;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px 3px 1px rgba(20, 20, 20, 0.3);
+}
+
+fieldset fieldset {
+    border: none;
+    background-color: rgb(220, 235, 255);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px;
+}
+
+.center {
+    float: center;
+}
+
+.topbanner
+{
+    display: flex;
+
+    width: 100%;
+    height: 50vh;
+    background-color: #fcb67d;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.wideimage
+{
+    display: flex;
+    position: relative;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.sobre
+{
+    position: absolute;
+    top: 6px;
+}
+
+.capitais
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: white;
+    padding: 50px;
+}
+
+.capitais > div
+{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px gray;
+    margin: 10px;
+}
+
+.capitais img
+{
+    border-radius: 8px 0 0 8px;
+    height: 100%;
+}
+
+.capitais div div:last-child
+{
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barracirculos
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+
+
+    background-color: #fcb67d;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.barracirculos:hover
+{
+    opacity: 0;
+}
+
+.circulo1
+{
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+
+    background-color: darkcyan;
+    
+}
+
+.circulo2
+{
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+
+    background-color: lightcoral;
+    
+}
+
+.circulo3
+{
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+
+    background-color: lightskyblue;
+}
+
+.circulo4
+{
+    width: 10vh;
+    height: 10vh;
+
+    border-radius: 50%;
+
+    background-color: deeppink;
+}
+
+.imagemmaluca
+{
+    position: absolute;
+    clip: rect(0px,1280px,500px,640px);
+    z-index: 3;
 }
