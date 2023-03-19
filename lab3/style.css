@@ -148,7 +148,10 @@ img
     width: 100%;
 }
 
-
+iframe {
+    width: 480px; 
+    height: 270px;
+}
 
 header
 {
