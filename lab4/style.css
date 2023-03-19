@@ -656,6 +656,36 @@ iframe {
     margin: 100px;
 }
 
+.animimage2 {
+    width: 500px;
+    height: 500px;
+
+    animation-name: crazy-wobble;
+    animation-duration: 5s;
+    
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.crazyanimationbg2 {
+    border-radius: 5%;
+
+    animation-duration: 1s;
+    
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+
+    margin: 100px;
+}
+
+@keyframes crazy-wobble {
+    0% {transform: skew(15deg, 15deg);}
+    25% {transform: skew(-15deg, -15deg);}
+    50% {transform: skew(150deg, 150deg);}
+    75% {transform: skew(-15deg, -15deg);}
+    100% {transform: skew(15deg, 15deg);}
+}
+
 @keyframes round-border {
     0% {
         border-radius: 5%;
