@@ -86,6 +86,8 @@ body {
     background-color: rgba(230, 255, 255, 1.0);
     width: 100%;
     z-index: -2;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .wrapgood {
@@ -173,6 +175,13 @@ fieldset fieldset {
 
 .center {
     float: center;
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+
 }
 
 .topbanner
@@ -383,6 +392,7 @@ iframe {
     height: 270px;
 }
 
+
 @media only screen and (max-width: 1200px) {
 
     .grid-container
@@ -440,6 +450,27 @@ iframe {
     iframe {
         width: 360px; 
         height: 202.5px;
+    }
+
+    fieldset {
+        border: none;
+        background-color: aliceblue;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px;
+        box-shadow: 1px 1px 3px 1px rgba(20, 20, 20, 0.3);
+    }
+    
+    fieldset fieldset {
+        border: none;
+        background-color: rgb(220, 235, 255);
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .inputbox {
+        width: 150px;
     }
 }
 
@@ -526,4 +557,75 @@ iframe {
     white-space: nowrap;
 
     box-sizing: border-box;
+}
+
+.parallax {
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg1 {
+    background-image: url(https://source.unsplash.com/Q6UehpkBSnQ/1920x1000);
+}
+
+.bg2 {
+    background-image: url(https://source.unsplash.com/mOEqOtmuPG8/1920x1000);
+}
+
+.bg3 {
+    background-image: url(https://source.unsplash.com/7ojyp-IXW7w/1920x1000);
+}
+
+.bg4 {
+    background-image: url(https://source.unsplash.com/DpI-_wydgJM/1920x1000);
+}
+
+.history {
+    background-color: rgb(215, 235, 255);
+}
+
+.history p {
+    margin: 50px 15% 50px 15%;
+    text-align: justify;
+}
+
+.firsttext p {
+    margin: 15px 15% 50px 15%;
+}
+
+.deisi1 {
+    height: 200px;
+    margin: 20px;
+    transition: transform 1.5s;
+}
+
+.deisi1:hover {
+    transform: rotateY(180deg);
+}
+
+.umbrella1 {
+    height: 200px;
+    margin: 20px;
+    padding: 10px;
+
+    transition: transform 1s;
+}
+
+.umbrella1:hover {
+    transform: skew(10deg, 50deg);
+}
+
+.rain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+}
+
+.rain:hover {
+    background: url(images/rain.gif);
+
 }
