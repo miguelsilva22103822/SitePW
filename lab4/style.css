@@ -659,6 +659,11 @@ iframe {
 .animimage2 {
     width: 500px;
     height: 500px;
+}
+
+.animimage2:hover {
+    width: 500px;
+    height: 500px;
 
     animation-name: crazy-wobble;
     animation-duration: 5s;
@@ -687,11 +692,11 @@ iframe {
 }
 
 @keyframes crazy-wobble {
-    0% {transform: skew(15deg, 15deg);}
+    0% {transform: skew(0deg, 0deg);}
     25% {transform: skew(-15deg, -15deg);}
     50% {transform: skew(150deg, 150deg);}
     75% {transform: skew(-15deg, -15deg);}
-    100% {transform: skew(15deg, 15deg);}
+    100% {transform: skew(0deg, 0deg);}
 }
 
 @keyframes round-border {
@@ -730,4 +735,96 @@ iframe {
     0% {transform: rotate(0deg); width: 200px;}
     50% {transform: rotate(180deg);  width: 100px;}
     100% {transform: rotate(360deg);  width: 200px;}
+}
+
+.sun circle {
+    transition: fill 1s ease-in-out;
+}
+
+.sun ellipse {
+    opacity: 0.3;
+
+    animation-name: crazyelipse;
+    animation-duration: 0.5s;
+    
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    animation-play-state: paused;
+}
+
+.sun:hover circle{
+    fill: yellow;
+}
+
+.sun:hover ellipse {
+    animation-play-state: running;
+}
+
+@keyframes crazyelipse {
+    0% {
+        transform: scale(1);
+        stroke-width: 2;
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: translateX(-50px) translateY(-50px) scale(1.25);
+        stroke-width: 4;
+        opacity: 0.75;
+    }
+
+    100% {
+        transform: scale(1);
+        stroke-width: 2;
+        opacity: 0.3;
+    }
+}
+
+.poema > div{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.poema > div:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+}
+
+.quadra1 {
+    background-color: rgb(215, 235, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.quadra2 {
+    background-color: rgb(255, 255, 255);
+}
+
+.quadra3 {
+    background-color: rgb(215, 235, 255);
+}
+
+.quadra4 {
+    background-color: rgb(215, 235, 255);
+}
+
+.quadra1 p:nth-child(odd){
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.quadra2 p{
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.quadra3 p{
+    font-weight: bold;
+    rotate: -5deg;
+    font-family: cursive;
+}
+
+.quadra4 p{
+    rotate: 5deg;
+    text-decoration:overline;
+    color: darkblue;
 }
